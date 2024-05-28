@@ -1,0 +1,16 @@
+<div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+  <h2 class="mb-4 mb-md-5">Tutoriais disponíveis:</h2>
+  <div class="row w-100 justify-content-center">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3" *ngFor="let item of items">
+      <div class="btn btn-outline-secondary m-2 d-flex flex-column align-items-center w-100"
+           (click)="navigateTo(item.route)"
+           style="border-radius: 15px;">
+        <img [src]="item.image" class="img-fluid rounded-circle" [alt]="item.alt">
+        <div class="mt-2 text-center">
+          <h5>{{item.title}}</h5>
+          <p>{{item.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

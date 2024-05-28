@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos específicos para o dark mode */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+
+  .card {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .list-group-item {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .dropdown-menu {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .dropdown-item {
+    color: #fff;
+    &:hover {
+      background-color: #555;
+    }
+  }
+
+  .navbar {
+    background-color: #222;
+    .nav-link, .navbar-brand, .navbar-toggler-icon {
+      color: #fff;
+    }
+    .nav-link:hover,
+    .dropdown-item:hover {
+      color: #ccc;
+    }
+  }
+}
+
+
+/* Estilos para o light mode */
+body.light-mode {
+  background-color: #fff;
+  color: #ffffff;
+
+  .card {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .list-group-item {
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+
+  .font-weight-bold {
+    font-weight: bold;
+  }
+}

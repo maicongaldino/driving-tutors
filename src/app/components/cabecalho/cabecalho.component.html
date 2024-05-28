@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand ms-3 me-4" href="/">
+    <img
+      src="https://i.imgur.com/Nhzpw3n.png"
+      width="30"
+      height="30"
+      style="border-radius: 50%"
+      class="d-inline-block align-top"
+      alt="Imagem logo cabeçalho"
+    />
+    Driving Tutors
+  </a>
+  <div class="d-flex align-items-center">
+    <button class="btn btn-outline-light d-lg-none me-2" (click)="toggleDarkMode()">
+      <i class="fas fa-lightbulb"></i>
+    </button>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div
+    class="collapse navbar-collapse justify-content-between align-items-end"
+    id="navbarNav"
+  >
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Estacionamento
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="/entrar-vaga">Entrar na Vaga</a></li>
+          <li><a class="dropdown-item" href="/sair-vaga">Sair da Vaga</a></li>
+        </ul>
+      </li>
+      <li class="nav-item d-lg-none">
+        <a class="nav-link" href="/sobre">Sobre</a>
+      </li>
+    </ul>
+    <div class="d-flex align-items-center d-none d-lg-flex">
+      <button class="btn btn-outline-light" (click)="toggleDarkMode()">
+        <i class="fas fa-lightbulb"></i>
+      </button>
+      <a class="nav-link ms-3 me-4" href="/sobre">Sobre</a>
+    </div>
+  </div>
+</nav>
